@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+    body {
+    background-color:#303841;
+    }
+    .logo{
+        width:150px;
+    }
+    .done-header{
+        color:white;
+        margin-top:200px;
+        font-size: 30pt;
+        font-weight: bold;
+        font-family: Verdana;
+        text-align: center;
+    }
+    .done-button{
+        text-align: center;
+        color:white;
+        font-size: 30pt;
+        font-family: Verdana;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .done-button-a{
+        text-decoration: none;
+    }
+    .done-button:hover{
+        text-decoration: none;
+        color:aquamarine;
+
+    }
+    .ball {
+        width: 150px;
+        height: 150px;
+        background-image: url(logo.png);
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 100px;
+        text-align: center;
+        animation-name: ball;
+        animation-duration:10s;
+        animation-iteration-count: infinite;
+    }
+    .eas{animation-timing-function: ease;}
+    @keyframes ball{
+	0%{left: 100px; top:450px;}
+	25%{left: 100px; top:0px;}
+	50%{left: 1500px; top:0px;}
+	75%{left: 1500px; top:450px;}
+	100%{left: 100px; top:450px;}
+}
+  </style>
+  </head>
+  <body>
+    <p class="done-header">Jūs Užpildėte Apklausą!</p>
+    <a class="done-button-a" href="index.html"><p class="done-button">Spauskite čia norint grįžti į titulinį puslapį</p></a>
+    <div class="ball"><img src="logo.png" class="logo"></div>
+  </body>
+
+  </html>
